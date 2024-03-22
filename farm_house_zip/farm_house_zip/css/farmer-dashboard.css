@@ -1,0 +1,119 @@
+/* Custom CSS for Farmer Dashboard */
+body{
+    font-size: 36px; /* Increased font size for better readability */
+}
+/* Welcome message styles */
+.container > h2 {
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+/* My Products section styles */
+.container > .row > .col-md-6 {
+    margin-bottom: 20px;
+}
+
+/* Edit Product Modal styles */
+.modal-content {
+    background-color: #f8f9fa;
+}
+
+.modal-header {
+    background-color: #009a4e;
+    color: #fff;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+}
+
+/* Post Product Advertisement form styles */
+.form-control {
+    margin-bottom: 10px;
+}
+
+/* Share Experience section styles */
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.uploaded-post {
+    margin-bottom: 20px;
+}
+
+.image-overview {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #009a4e;
+    border-color: #009a4e;
+}
+
+.btn-primary:hover {
+    background-color: #007d3a;
+    border-color: #007d3a;
+}
+/* Custom CSS for uploaded posts */
+.uploaded-post {
+    max-width: 500px; /* Set the maximum width of the post */
+    margin: 20px auto; /* Center the post horizontally */
+    border: 1px solid #ccc; /* Add a border for style */
+    padding: 10px; /* Add padding for spacing */
+    overflow: hidden;
+}
+
+.uploaded-post img {
+    max-width: 100%; /* Ensure media elements fit within the post */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline styling */
+    margin-bottom: 10px; /* Add spacing between media and caption */
+}
+
+.uploaded-post video {
+    max-width: 100%; /* Set maximum width to prevent full page occupation */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline styling */
+    margin-bottom: 10px; /* Add spacing between video and caption */
+}
+
+.uploaded-post .caption {
+    font-style: italic; /* Style the caption text */
+}
+
+/* Styling for comments section */
+.comment-container {
+    margin-top: 10px; /* Add margin above the comment container */
+}
+
+.comment {
+    background-color: #f2f2f2; /* Background color for comments */
+    padding: 5px; /* Add padding for comment styling */
+    margin-bottom: 5px; /* Add spacing between comments */
+}
+

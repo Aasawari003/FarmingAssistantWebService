@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Farm House</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/customer-dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        /* Custom CSS for Customer Dashboard */
+
+        /* Style the navbar */
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        /* Style the dashboard container */
+        .container {
+            max-width: 960px;
+            margin: auto;
+        }
+
+        /* Style the section titles */
+        h2,
+        h3 {
+            margin-top: 30px;
+        }
+
+        /* Style the cards in the Recommended Products section */
+        .card {
+            margin-bottom: 20px;
+        }
+
+        /* Style the product images */
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Style the buttons in the cards */
+        .btn-primary {
+            margin-top: 10px;
+        }
+
+        /* Style the Order History table */
+        .table-responsive {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main clearfix">
+        <div class="main_1 clearfix">
+            <section id="header">
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                        <div class="col-sm-12">
+                            <div class="navbar-header page-scroll">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="index.html"><i class="fa fa-leaf"></i> Farm House</a>
+                            </div>
+
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a class="tag_menu" href="index.html">Home</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="tag_menu" href="about.html">About Us</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="tag_menu" href="service.html">Services</a>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a class="tag_menu" href="#" data-toggle="dropdown" role="button"
+                                            aria-expanded="false">Blogs<span class="caret"></span></a>
+                                        <ul class="dropdown-menu drop_1" role="menu">
+                                            <li><a href="news.html">Blog</a></li>
+                                            <li><a href="news_detail.html">Blog Detail</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a class="tag_menu" href="contact.html">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a class="tag_menu  active_tab" href="/register.html">Register</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </section>
+        </div>
+        <div class="main_2 clearfix">
+            <section id="center" class="center_detail clearfix">
+                <div class="center_serv_m">
+                    <div class="container">
+                        <div class="row">
+                            <div class="center_serv_1 text-center">
+                                <div class="col-sm-12">
+                                    <h1 class="mgt col">All Products</h1>
+                                    <p class="col">Wild flowers , plants and fungi are the life support for all our
+                                        wildlife <br> and their colour and character light up our landscapes. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <!-- <h2>Welcome, Customer!</h2> -->
+        <!-- Recommended Products Section -->
+        <!-- <h3>Recommended Products</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">Description of Product 1.</p>
+                        <p class="card-text">Price: $10</p>
+                        <p class="product-image"><img src="/images/Tomato.jpg"></p>
+                        <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">Description of Product 2.</p>
+                        <p class="card-text">Price: $15</p>
+                        <p class="product-image"><img src="/images/Tomato.jpg"></p>
+
+                        <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text">Description of Product 3.</p>
+                        <p class="card-text">Price: $20</p>
+                        <p class="product-image"><img src="/images/Tomato.jpg"></p>
+
+                        <a href="#" class="btn btn-primary btn-add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- Latest Farmer Posts Section -->
+        <!-- <h3>Latest Farmer Posts</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Title 1</h5>
+                        <p class="card-text">Post content goes here...</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-primary btn-like">Like</button>
+                            <button type="button" class="btn btn-primary btn-comment">Comment</button>
+                            <button type="button" class="btn btn-primary btn-share">Share</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Title 2</h5>
+                        <p class="card-text">Post content goes here...</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-primary btn-like">Like</button>
+                            <button type="button" class="btn btn-primary btn-comment">Comment</button>
+                            <button type="button" class="btn btn-primary btn-share">Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- <h3>Order History</h3>
+        <div class="table-responsive">
+            <table id="orderHistoryTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Total Price</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody> -->
+                    <!-- Order history rows will be dynamically generated here -->
+                <!-- </tbody>
+            </table> -->
+        </div>
+    </div>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer_1 text-center clearfix">
+                    <p class="mgt col">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_2"
+                            href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $("#menu-close").click(function (e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+
+    <script>
+        $(document).on('click', '.panel-heading span.clickable', function (e) {
+            var $this = $(this);
+            if (!$this.hasClass('panel-collapsed')) {
+                $this.parents('.panel').find('.panel-body').slideUp();
+                $this.addClass('panel-collapsed');
+                $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+            } else {
+                $this.parents('.panel').find('.panel-body').slideDown();
+                $this.removeClass('panel-collapsed');
+                $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+            }
+        })
+    </script>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Add your custom JavaScript file here -->
+    <script src="/dashboard-customer.js"></script>
+</body>
+
+</html>

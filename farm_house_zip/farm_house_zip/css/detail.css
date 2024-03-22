@@ -1,0 +1,158 @@
+/*
+Template Name:Farm House
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+/*********************detail****************/
+#news{
+padding-top:40px;
+padding-bottom:40px; 
+ }
+.center_detail {
+    background-image: url(../img/carousal3.jpg);
+	background-position:center;
+}
+.news_home_1i h6{
+background: #009a4e;
+border-radius:5px;
+width:15%;
+padding:8px;
+text-align:center;
+margin-left:10px;
+color:#fff;
+ }
+.news_home_1i{
+ position:relative;
+ }
+.news_home_1ii{
+position:absolute;
+width:100%;
+top:480px; 
+ }
+.news_home_1i h3{
+margin-top:30px;
+ }
+.news_l{
+margin-top:40px; 
+ }
+.news_r1 h3{
+ border-bottom:1px solid #ddd;
+ padding-bottom:5px;
+ }
+.news_r1 .form-control{
+margin-top:20px;
+font-size:20px;
+height:60px;
+ }
+.news_r1{
+border:1px solid #ddd;
+padding:40px 15px;
+margin-top:30px; 
+ }
+.news_r1 ul{
+list-style:disc;
+margin-left:15px;
+ }
+.news_r1 ul li{
+margin-top:5px;
+color:#009a4e;
+ }
+.news_r1i{
+margin-top:20px; 
+ }
+.news_r1i img{
+padding:1px;
+ }
+.news_home_1i h5{
+ display:inline-block;
+ margin-left:10px;
+ }
+.news_home_1in{
+background:#009a4e;
+padding:30px 20px;
+margin-top:15px; 
+ }
+.nav_last{
+list-style:disc;
+margin-left:15px; 
+ }
+.nav_last li{
+margin-bottom:5px;
+ }
+.detail_hli3{
+margin-top:20px;
+border:1px solid #ddd;
+padding:20px 15px 30px 15px; 
+ }
+.detail_hli3 .form-control{
+ margin-top:20px;
+ font-size:20px;
+ height:60px;
+ border-radius:0;
+ }
+.detail_hli3 .form_1{
+height:150px;
+ }
+/*********************detail_end****************/
+
+
+@media screen and (max-width : 767px){
+#news{
+text-align:center; 
+ }
+.news_home_1ii{
+top:0; 
+ }
+.news_home_1i h6{
+width:45%; 
+ }
+.news_r1 ul {
+list-style: none;
+margin-left:0;
+}
+.nav_last {
+list-style: none;
+margin-left:0;
+}
+.news_r {
+margin-top:20px; 
+ }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+.news_home_1i img{
+min-height:500px; 
+ }
+.news_home_1i h6{
+ width:25%;
+ }
+.news_r1 h3{
+font-size:24px; 
+ }
+.news_r1 .button{
+padding:15px 20px!important;
+ }
+.news_home_1i .img-circle{
+min-height:auto; 
+ }
+ }
+@media (min-width:992px) and (max-width:1200px) {
+.news_home_1i img{
+min-height:500px; 
+ }
+.news_home_1i h6{
+ width:25%;
+ }
+.news_home_1i .img-circle{
+min-height:auto; 
+ }
+ }
+@media (min-width:1201px) and (max-width:1350px) {
+
+ }
+
+
+
+

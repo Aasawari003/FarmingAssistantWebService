@@ -1,0 +1,132 @@
+/*
+Template Name:Farm House
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+/*********************center_service****************/
+.center_serv {
+    background-image: url(../img/service1.jpeg);
+	background-position:center;
+}
+.center_serv_m{
+ background:#080d15b5;
+ padding-top:310px;
+ padding-bottom:230px;
+ }
+.center_serv_1 h1{
+ font-size:70px;
+ }
+/*********************center_service_end****************/
+/*********************serv_home****************/
+#serv_home {
+padding-top:40px;
+padding-bottom:40px;
+}
+.serv_home_1i{
+ border:1px solid #eee;
+ padding:40px 20px;
+ margin-bottom:20px;
+ }
+.serv_home_1i:hover{
+background: #009a4e14;
+ }
+.serv_home_1il span i{
+ font-size:70px;
+ color:#fbc50b;
+ }
+ .serv_home_1ir h3 a {
+    color: #3ec415; /* Blue color for the link */
+    text-decoration: none; /* Remove underline */
+}
+
+.serv_home_1ir h3 a:hover {
+    color: #d7bc08; /* Darker blue color on hover */
+}
+
+.environment_1{
+margin-bottom:40px; 
+ }
+ 
+#number{
+padding-top:60px;
+padding-bottom:60px; 
+ }
+.number_1 span i{
+disply:block;
+margin-top:20px;
+font-size:40px;
+color:#fbc50b;
+ }
+.number_1 h1{
+ font-size:80px;
+ }
+/*********************serv_home_end****************/
+
+/*********************erosion****************/
+#erosion{ 
+ background-color: #009a4e14;
+}
+.erosion_3{ 
+ text-align:center;
+ padding:18px;
+ }
+/*********************erosion_end****************/
+
+@media screen and (max-width : 767px){
+.environment_1 h1{
+font-size:40px; 
+ }
+.serv_home_2 {
+ margin-bottom:15px;
+ }
+.serv_home_1i {
+text-align:center; 
+ }
+.serv_home_1ir {
+margin-top:10px; 
+ }
+#number{
+padding-top:0;
+ }
+.number_1 {
+margin-bottom:10px; 
+ }
+#erosion{
+padding-top:40px;
+padding-bottom:40px; 
+ }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+.serv_home_1il span i{
+ font-size:50px;
+ }
+.erosion_3 p{
+font-size:15px; 
+ }
+.erosion_3 h3{
+font-size:22px; 
+ }
+.erosion_2 img{
+min-height:350px; 
+ }
+ }
+@media (min-width:992px) and (max-width:1200px) {
+.erosion_3 p{
+font-size:16px; 
+ }
+.erosion_2 img{
+min-height:350px; 
+ }
+ }
+@media (min-width:1201px) and (max-width:1350px) {
+.erosion_3 p{
+font-size:16px; 
+ }
+ }
+
+
+
+

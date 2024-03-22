@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Farm House</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/customer-dashboard.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="main clearfix">
+        <div class="main_1 clearfix">
+            <section id="header">
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                        <div class="col-sm-12">
+                            <div class="navbar-header page-scroll">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="index.html"><i class="fa fa-leaf"></i> Farm House</a>
+                            </div>
+
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <a class="tag_menu" href="index.html">Home</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="tag_menu" href="about.html">About Us</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="tag_menu" href="service.html">Services</a>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a class="tag_menu" href="#" data-toggle="dropdown" role="button"
+                                            aria-expanded="false">Blogs<span class="caret"></span></a>
+                                        <ul class="dropdown-menu drop_1" role="menu">
+                                            <li><a href="news.html">Blog</a></li>
+                                            <li><a href="news_detail.html">Blog Detail</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a class="tag_menu" href="contact.html">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a class="tag_menu  active_tab" href="/register.html">Register</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </nav>
+            </section>
+        </div>
+        <div class="main_2 clearfix">
+            <section id="center" class="center_detail clearfix">
+                <div class="center_serv_m">
+                    <div class="container">
+                        <div class="row">
+                            <div class="center_serv_1 text-center">
+                                <div class="col-sm-12">
+                                    <h1 class="mgt col">All Products</h1>
+                                    <p class="col">Wild flowers , plants and fungi are the life support for all our
+                                        wildlife <br> and their colour and character light up our landscapes. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h2>Welcome, Farmer!</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h4>My Products</h4>
+                <!-- Sample product entry -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Price/Quantity</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productsList">
+                        <tr data-product-id="1">
+                            <td>Wheat</td>
+                            <td>
+                                <!-- Overview of the product image -->
+                                <div class="product-image">
+                                    <img src="" alt="Wheat Image" style="max-width: 100px;">
+                                    <div class="image-overview">Click to view</div>
+                                </div>
+                            </td>
+                            <td>$10/kg</td>
+                            <td>High-quality organic wheat harvested last month.</td>
+                            <td>
+                                <button class="btn btn-primary edit-button" data-product-id="1">Edit</button>
+                                <button class="btn btn-danger">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- Add more product entries dynamically -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <h4>Post Product Advertisement</h4>
+                <!-- Form to post product advertisement -->
+                <form id="postProductForm" onsubmit="return addProduct()" method="post" action="/products">
+                    <!-- Form fields for product advertisement -->
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" name="farmerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productName">Product Name:</label>
+                        <input type="text" class="form-control" id="productName" name="productName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="imagePath">Product Image:</label>
+                        <input type="file" class="form-control-file" id="imagePath" name="imagePath" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="priceQuantity">Price/Quantity:</label>
+                        <input type="text" class="form-control" id="priceQuantity" name="priceQuantity" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="productDescription">Description:</label>
+                        <textarea class="form-control" id="productDescription" name="productDescription" rows="4"
+                            required></textarea>
+                    </div>
+                    <button type="submit" value="products" class="btn btn-primary">Post Advertisement</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h4>Share Experience</h4>
+                <!-- Form to share experience similar to Instagram post -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <textarea class="form-control" id="experienceContent" name="experienceContent" rows="4"
+                                placeholder="Share your experience..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="uploadImage">Upload Image:</label>
+                            <input type="file" class="form-control-file" id="uploadImage" name="uploadImage"
+                                accept="image/*">
+                        </div>
+                        <div class="form-group">
+                            <label for="uploadVideo">Upload Video:</label>
+                            <input type="file" class="form-control-file" id="uploadVideo" name="uploadVideo"
+                                accept="video/*">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="postButton">Post</button>
+                    </div>
+                </div>
+
+                <!-- Display uploaded posts -->
+                <div id="uploadedPosts" class="mt-4">
+                    <!-- Sample uploaded post -->
+                    <div class="card mb-3 uploaded-post" id="samplePost" style="display: none;">
+                        <div class="card-body">
+                            <h5 class="card-title">My Posts</h5>
+                            <p class="card-text caption"></p> <!-- Caption for the post -->
+                            <img src="sample-image.jpg" class="img-fluid mb-3" alt="Sample Image"
+                                style="display: none;">
+                            <video controls class="mb-3" style="display: none;">
+                                <source src="sample-video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <!-- <div class="d-flex justify-content-between align-items-center comment-container">
+                                <button type="button" class="btn btn-primary">Like</button>
+                                <button type="button" class="btn btn-primary">Comment</button>
+                                <button type="button" class="btn btn-primary">Share</button>
+                            </div> -->
+                            <!-- Comments section -->
+                            <!-- <div class="comments">
+                                <div class="comment">
+                                    <p class="mb-0">Comment text goes here...</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Product Modal -->
+    <div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editProductModalLabel">Edit Product</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="editProductId">
+                    <div class="form-group">
+                        <label for="editProductName">Product Name:</label>
+                        <input type="text" class="form-control" id="editProductName">
+                    </div>
+                    <div class="form-group">
+                        <label for="editProductImage">Product Image:</label>
+                        <input type="text" class="form-control" id="editProductImage">
+                    </div>
+                    <div class="form-group">
+                        <label for="editPriceQuantity">Price/Quantity:</label>
+                        <input type="text" class="form-control" id="editPriceQuantity">
+                    </div>
+                    <div class="form-group">
+                        <label for="editProductDescription">Description:</label>
+                        <textarea class="form-control" id="editProductDescription" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="updateProductBtn">Update Product</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to handle post button click
+        document.getElementById('postButton').addEventListener('click', function () {
+            // Get the uploaded image and video
+            var uploadedImage = document.getElementById('uploadImage').files[0];
+            var uploadedVideo = document.getElementById('uploadVideo').files[0];
+            var experienceContent = document.getElementById('experienceContent').value;
+
+            // Create elements for the new post
+            var newPost = document.getElementById('samplePost').cloneNode(true);
+            newPost.style.display = 'block';
+
+            // Update the new post with uploaded content and caption
+            var cardBody = newPost.querySelector('.card-body');
+            var cardText = cardBody.querySelector('.card-text');
+            var imgElement = cardBody.querySelector('img');
+            var videoElement = cardBody.querySelector('video');
+
+            cardText.textContent = experienceContent; // Set the caption
+
+            if (uploadedImage) {
+                imgElement.src = URL.createObjectURL(uploadedImage);
+                imgElement.style.display = 'block';
+            }
+
+            if (uploadedVideo) {
+                videoElement.src = URL.createObjectURL(uploadedVideo);
+                videoElement.style.display = 'block';
+            }
+
+            // Append the new post at the beginning of the uploadedPosts section
+            var uploadedPosts = document.getElementById('uploadedPosts');
+            uploadedPosts.insertBefore(newPost, uploadedPosts.firstChild);
+
+            // Reset the form
+            document.getElementById('experienceContent').value = '';
+            document.getElementById('uploadImage').value = '';
+            document.getElementById('uploadVideo').value = '';
+        });
+
+        // Function to handle edit button click
+        function handleEdit(productId) {
+            // Get the product details from the UI based on productId
+            var productName = document.querySelector(`tr[data-product-id="${productId}"] td:nth-child(1)`).textContent;
+            var productImageUrl = document.querySelector(`tr[data-product-id="${productId}"] td:nth-child(2) img`).src;
+            var productPrice = document.querySelector(`tr[data-product-id="${productId}"] td:nth-child(3)`).textContent;
+            var productDescription = document.querySelector(`tr[data-product-id="${productId}"] td:nth-child(4)`).textContent;
+
+            // Populate the form fields with the product details for editing
+            document.getElementById('editProductName').value = productName;
+            document.getElementById('editProductImage').value = productImageUrl;
+            document.getElementById('editPriceQuantity').value = productPrice;
+            document.getElementById('editProductDescription').value = productDescription;
+
+            // Show the edit product modal
+            $('#editProductModal').modal('show');
+
+            // Save the productId for updating the product later
+            document.getElementById('editProductId').value = productId;
+        }
+
+        // Function to update product details after editing
+        function updateProduct(productId) {
+            // Get the edited product details from the form
+            var editedName = document.getElementById('editProductName').value;
+            var editedImageUrl = document.getElementById('editProductImage').value;
+            var editedPrice = document.getElementById('editPriceQuantity').value;
+            var editedDescription = document.getElementById('editProductDescription').value;
+
+            // Update the product details in the UI
+            var productRow = document.querySelector(`tr[data-product-id="${productId}"]`);
+            if (productRow) {
+                productRow.children[0].textContent = editedName;
+                productRow.children[1].innerHTML = `<img src="${editedImageUrl}" alt="${editedName}" style="max-width: 100px;">`;
+                productRow.children[2].textContent = editedPrice;
+                productRow.children[3].textContent = editedDescription;
+            }
+
+            // Check if the product is newly added (productId starts with 'newProduct')
+            if (productId.startsWith('newProduct')) {
+                // Implement logic to update the newly added product in the backend
+                // Example:
+                // $.ajax({
+                //     method: 'POST',
+                //     url: '/api/products',
+                //     data: {
+                //         name: editedName,
+                //         imageUrl: editedImageUrl,
+                //         price: editedPrice,
+                //         description: editedDescription
+                //     },
+                //     success: function (response) {
+                //         // Handle success response
+                //     },
+                //     error: function (xhr, status, error) {
+                //         // Handle error response
+                //         console.error(error);
+                //     }
+                // });
+            } else {
+                // Implement logic to update the existing product in the backend
+                // Example:
+                // $.ajax({
+                //     method: 'PUT',
+                //     url: `/api/products/${productId}`,
+                //     data: {
+                //         name: editedName,
+                //         imageUrl: editedImageUrl,
+                //         price: editedPrice,
+                //         description: editedDescription
+                //     },
+                //     success: function (response) {
+                //         // Handle success response
+                //     },
+                //     error: function (xhr, status, error) {
+                //         // Handle error response
+                //         console.error(error);
+                //     }
+                // });
+            }
+
+            // Hide the edit product modal
+            $('#editProductModal').modal('hide');
+        }
+
+        // Add event listener for edit button click
+        document.addEventListener('click', function (event) {
+            if (event.target.classList.contains('edit-button')) {
+                var productId = event.target.dataset.productId;
+                handleEdit(productId);
+            }
+        });
+
+        // Add event listener for update product button in edit modal
+        document.getElementById('updateProductBtn').addEventListener('click', function () {
+            var productId = document.getElementById('editProductId').value;
+            updateProduct(productId);
+        });
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/dashboard-farmer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+/*
+Template Name:Farm House
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+/*********************contact****************/
+.center_detail {
+    background-image: url(../img/farming_weather3.jpg);
+	background-position:center;
+}
+#contact{
+padding-top:40px;
+padding-bottom:40px; 
+ }
+.contact_1{
+ margin-top:40px;
+ }
+.contact_1l{
+background: #009a4e;
+padding:60px 40px;
+ }
+.contact_1l .form-control{
+height:60px;
+background:none;
+color:#fff;
+margin-bottom:20px;
+border: 1px solid #07a959;
+font-size:20px;
+ }
+.contact_1l ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+.contact_1l .button:hover{
+ background:#000;
+ }
+.contact_1r span i{
+background: #009a4e14;
+width:100px;
+height:100px;
+text-align:center;
+line-height:100px;
+font-size:60px;
+color: #fbc50b;
+border-radius:50%;
+ }
+.contact_1r h5{
+line-height:1.6em; 
+ }
+.contact_1r{
+border:1px solid #ddd;
+padding:30px 15px;
+margin-top:20px;
+ }
+.contact_2{
+margin-top:40px; 
+ }
+
+/* Redirection message styles */
+#contact .container p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+#contact .container p a {
+    color: #007bff; /* Blue color for the link */
+}
+
+/*********************contact_end****************/
+
+@media screen and (max-width : 767px){
+.contact_1r {
+ text-align:center;
+ }
+.contact_1l {
+ margin-bottom:20px;
+ text-align:center;
+ }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+.contact_1r span i{
+width:60px;
+height:60px;
+line-height:60px;
+font-size:35px; 
+ }
+ }
+@media (min-width:992px) and (max-width:1200px) {
+.contact_1r span i{
+width:80px;
+height:80px;
+line-height:80px;
+font-size:45px; 
+ }
+ }
+@media (min-width:1201px) and (max-width:1350px) {
+
+ }
+
+
+
+

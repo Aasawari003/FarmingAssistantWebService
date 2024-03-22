@@ -1,0 +1,6 @@
+/* Welcome message styles */
+.container > h2 {
+    margin-top: 30px;
+    font-size: 28px;
+}
+
